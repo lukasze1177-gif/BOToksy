@@ -686,7 +686,22 @@
 
 <!-- NAV -->
 <nav>
-  <div class="logo">BOToksy</div>
+  <div class="logo">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" height="38" style="display:block;">
+    <defs>
+      <linearGradient id="navgrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#E8409A"/>
+        <stop offset="100%" stop-color="#9B3FC8"/>
+      </linearGradient>
+      <filter id="navglow" x="-20%" y="-40%" width="140%" height="180%">
+        <feGaussianBlur stdDeviation="3" result="blur"/>
+        <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+      <style>@import url('https://fonts.googleapis.com/css2?family=Michroma&amp;display=swap');</style>
+    </defs>
+    <text x="240" y="82" text-anchor="middle" font-family="Michroma, sans-serif" font-size="62" font-weight="400" fill="url(#navgrad)" letter-spacing="4" filter="url(#navglow)">BOToksy</text>
+  </svg>
+</div>
   <a href="#pricing" class="nav-cta">Zacznij teraz →</a>
 </nav>
 
@@ -1016,7 +1031,21 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">BOToksy</div>
+  <div class="footer-logo">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" height="28" style="display:block;">
+    <defs>
+      <linearGradient id="ftgrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#E8409A"/>
+        <stop offset="100%" stop-color="#9B3FC8"/>
+      </linearGradient>
+      <filter id="ftglow" x="-20%" y="-40%" width="140%" height="180%">
+        <feGaussianBlur stdDeviation="2" result="blur"/>
+        <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+    </defs>
+    <text x="240" y="82" text-anchor="middle" font-family="Michroma, sans-serif" font-size="62" font-weight="400" fill="url(#ftgrad)" letter-spacing="4" filter="url(#ftglow)">BOToksy</text>
+  </svg>
+</div>
   <div class="footer-text">© 2026 BOToksy.pl — Automatyzacja dla salonów</div>
 </footer>
 
