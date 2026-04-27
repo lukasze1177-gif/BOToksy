@@ -645,6 +645,34 @@
   .plan-period, .plan-features li, .stat-label, .section-label, .footer-text,
   .testi-name, .testi-loc, .guarantee, .plan-name { font-family: 'Poppins', sans-serif !important; }
 
+
+  /* SHIMMER BUTTONS */
+  .btn-primary, .plan-btn.filled, .nav-cta {
+    position: relative;
+    overflow: hidden;
+  }
+  .btn-primary::after, .plan-btn.filled::after, .nav-cta::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent 0%,
+      rgba(255,255,255,0.25) 50%,
+      transparent 100%
+    );
+    animation: shimmer 2.4s ease-in-out infinite;
+    border-radius: inherit;
+  }
+  @keyframes shimmer {
+    0%   { left: -100%; }
+    60%  { left: 150%; }
+    100% { left: 150%; }
+  }
+
   /* SCROLL REVEAL */
   .reveal { opacity: 0; transform: translateY(40px); transition: all 0.7s ease; }
   .reveal.visible { opacity: 1; transform: translateY(0); }
@@ -980,7 +1008,8 @@
       Zacznij teraz — już od 199 zł/mies. →
     </a>
     <div class="guarantee">
-      🔒 Bezpieczna#128274; Bezpieczna płatność · Rezygnacja w dowolnym momencie · Wdrożenie w 24h
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="url(#lg1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><defs><linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#E8409A"/><stop offset="100%" stop-color="#9B3FC8"/></linearGradient></defs><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      Bezpieczna płatność · Rezygnacja w dowolnym momencie · Wdrożenie w 24h
     </div>
   </div>
 </section>
